@@ -21,12 +21,12 @@ This project is an API service for a ToDo list and the core object is the Task t
 
 The exposed endpoints are:
 
-- GET / -> Will provide all Tasks
-- GET /completed -> Will provide all completed Tasks
-- GET /incomplete -> Will provide all incomplete Tasks
-- POST / -> Create a new Task
-- PUT /ID -> Update the Task with ID
-- DELETE /ID -> Delete the Task with ID
+- GET /api/v1/tasks/ -> Will provide all Tasks
+- GET /api/v1/tasks/completed -> Will provide all completed Tasks
+- GET /api/v1/tasks/incomplete -> Will provide all incomplete Tasks
+- POST /api/v1/tasks/ -> Create a new Task
+- PUT /api/v1/tasks/ID -> Update the Task with ID
+- DELETE /api/v1/tasks/ID -> Delete the Task with ID
 
 You can use [swagger-ui](http://localhost:8080/swagger-ui/index.html) to test them.
 
