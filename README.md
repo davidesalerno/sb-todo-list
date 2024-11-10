@@ -49,7 +49,7 @@ If you quickly need a local environment you can use the scripts:
 - stop-devcontainers.sh
 into the ```hacks``` folder.
 
-They are using [Podman](https://podman.io/) and [Podman Compose](https://podman-desktop.io/docs/compose) but you can easily switch to (Docker)[https://www.docker.com/] setting the ```CONTAINER_ENGINE``` env variable to ```docker```.
+They are using [Podman](https://podman.io/) and [Podman Compose](https://podman-desktop.io/docs/compose) but you can easily switch to [Docker](https://www.docker.com/) setting the ```CONTAINER_ENGINE``` env variable to ```docker```.
 
 
 
