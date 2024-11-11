@@ -1,0 +1,26 @@
+apiVersion: v1
+data:
+  mongo-init.js: |+
+    db = db.getSiblingDB('todo_db');
+
+    db.createCollection('log');
+    db.createUser(
+        {
+            user: "todo_user",
+            pwd: "passwd",
+            roles: [
+                {
+                    role: "readWrite",
+                    db: "todo_db"
+                }
+            ]
+        }
+    );
+
+kind: ConfigMap
+metadata:
+  annotations:
+    use-subpath: "true"
+  labels:
+    io.kompose.service: mongodb
+  name: mongodb-cm0
